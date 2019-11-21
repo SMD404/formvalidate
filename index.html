@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <link rel="stylesheet" href="./style/style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="./js/jquery.mask.min.js"></script>
+  <script src="./js/scripts.js" defer></script>
+  <title>Document</title>
+</head>
+
+<body>
+  <section class="section-main">
+    <div class="container container_white">
+      <div class="ticket-block ticket-block-title">
+        <h3 class="title">Пассажир 4 (взрослый)</h3>
+      </div>
+
+      <form action="/" type="post" id="buy-ticket" class="ticket">
+        <div class="ticket-block ticket-block_border">
+          <div class="ticket-item">
+            <p class="ticket__desc">Введите как написано в документе</p>
+            <input type="text" class="ticket__input" placeholder="Фамилия">
+          </div>
+
+          <div class="ticket-item">
+            <input type="text" class="ticket__input" placeholder="Имя">
+          </div>
+
+          <div class="ticket-item">
+            <input type="text" class="ticket__input ticket__input_f" placeholder="Отчество">
+          </div>
+
+          <div class="ticket-item ">
+            <p class="ticket__desc">дд.мм.гггг</p>
+            <input type="text" class="ticket__input ticket__input_sm" placeholder="Дата рождения">
+          </div>
+
+          <div class="ticket-item ticket-item-gender">
+            <p class="ticket__desc">Выберите пол</p>
+            <label class="ticket-label-r" for="ticket-radio-m">
+              <input type="radio" name="gender" value="Мужской" id="ticket-radio-m" class="ticket__radio-hidden">
+              <span class="ticket-label-r__span">М</span>
+            </label>
+            <label class="ticket-label-r" for="ticket-radio-f">
+              <input type="radio" name="gender" value="Женский" id="ticket-radio-f" class="ticket__radio-hidden">
+              <span class="ticket-label-r__span">Ж</span>
+            </label>
+          </div>
+
+          <div class="ticket-item">
+            <p class="ticket__desc">Выберите документ</p>
+            <select class="ticket__select">
+              <option class="ticket__option">Загран паспорт РФ</option>
+              <option class="ticket__option">Паспорт №2</option>
+              <option class="ticket__option">Паспорт №3</option>
+            </select>
+          </div>
+
+          <div class="ticket-item">
+            <p class="ticket__desc">9 цифр</p>
+            <input type="text" class="ticket__input ticket__input_sm" placeholder="Номер док-та">
+          </div>
+
+          <div class="ticket-item ticket-item-mg">
+            <p class="ticket__desc">дд.мм.гггг</p>
+            <input type="text" class="ticket__input ticket__input_sm" placeholder="Срок действия">
+          </div>
+        </div>
+
+        <div class="ticket-block ticket-block_up">
+          <div class="ticket-item">
+            <input type="tel" class="ticket__input ticket__input-phone" placeholder="Ваш номер" autocomplete="off"
+              required>
+          </div>
+
+          <div class="ticket-item ">
+            <input type="email" class="ticket__input ticket__input_m ticket__input-email"
+              placeholder="Электронная почта" autocomplete="off" required>
+          </div>
+
+          <div class="ticket-text">
+            <p>В экстренном случае мы свяжемся с вами по указанному телефону
+              На e-mail пришлем маршрут-квитанцию электронного билета.</p>
+          </div>
+        </div>
+
+        <div class="ticket-block">
+          <button type="button" class="button button-pay">Перейти к оплате</button>
+        </div>
+
+      </form>
+    </div>
+  </section>
+
+</body>
+
+</html>
